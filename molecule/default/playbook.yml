@@ -1,0 +1,25 @@
+---
+- name: Converge
+  hosts: all
+  roles:
+    - role: ansiblebit.oracle-java
+    - role: CourseOrchestra.tomcat
+    - role: mellophoneansible
+  vars:
+    mellophone_config_src: config.xml
+  tasks:
+    - name: install curl for testing purposes
+      apt:
+        name: curl
+
+    - name: copy users.xml
+      copy:
+        src: users.xml
+        dest: /opt/mellophone/users.xml
+        owner: tomcat
+        mode: "0644"
+
+    - name: start tomcat service
+      service:
+        name: tomcat
+        state: started

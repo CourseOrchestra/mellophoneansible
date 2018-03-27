@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://corchestra.ru/static/schema/fluteconfig.xsd">
+
+    <dbconnstring>jdbc:h2:mem:celesta;DB_CLOSE_DELAY=-1</dbconnstring>
+    <dbuser></dbuser>
+    <dbpassword></dbpassword>
+    <neverstop>false</neverstop>
+    <retrywait>50000</retrywait>
+    <scorepath>/var/opt/flute/score</scorepath>
+    <pylibpath>/opt/jython/Lib:/opt/jython/Lib/site-packages</pylibpath>
+</config>

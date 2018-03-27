@@ -1,0 +1,38 @@
+---
+- name: mkdir for mellophone
+  file:
+    dest: /opt/mellophone
+    state: directory
+    mode: "0644"
+    owner: tomcat
+
+- name: download mellophone war
+  get_url:
+    url: "{{ mellophone_url }}"
+    dest: /opt/mellophone-{{ mellophone_version }}.war
+    mode: "0644"
+    owner: tomcat
+
+- name: symlink mellophone to webapps
+  file:
+    src: /opt/mellophone-{{ mellophone_version }}.war
+    dest: /opt/tomcat/webapps/mellophone.war
+    state: link
+    owner: tomcat
+  notify: restart tomcat
+
+- name: copy mellophone tomcat config file
+  copy:
+    src: files/mellophone.xml
+    dest: /opt/tomcat/conf/Catalina/localhost/mellophone.xml
+    mode: "0644"
+    owner: tomcat
+  notify: restart tomcat
+
+- name: copy mellophone config file
+  template:
+    src: "{{ mellophone_config_src }}"
+    dest: /opt/mellophone/config.xml
+    mode: "0640"
+    owner: tomcat
+  notify: restart tomcat

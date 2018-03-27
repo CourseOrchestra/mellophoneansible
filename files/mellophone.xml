@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <Context privileged="true" antiResourceLocking="false" 
+         docBase="${catalina.home}/webapps/manager">
+         <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+    </Context>
+    <Parameter name="mellophone.config.path" value="/opt/mellophone/config.xml" override="true"/>
+</Context>

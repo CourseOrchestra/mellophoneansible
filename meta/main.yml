@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Ivan Ponomarev
+  description: Mellophone installation for Linux
+  company: Course
+  license: MIT
+  min_ansible_version: 2.3
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+
+  galaxy_tags:
+    - development

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.curs.ru/authserver users.xsd" xmlns="http://www.curs.ru/authserver">
+	    
+    <user login="kulkov" password="kulkov" SID="S-1-5-21-1482476501-1035525444-682003330-7647" name="Кульков Евгений Евгеньевич" email="-" />        
+    
+    <user login="alibegov" password="alibegov" SID="S-1-5-21-1482476501-1035525444-682003330-15833" name="Алибегова Гулишат Алибеговна" email="test5@test2.ru" />    
+                
+</users>

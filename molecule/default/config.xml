@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.curs.ru/authserver config.xsd"
+	xmlns="http://www.curs.ru/authserver">
+	<common>
+		<threadcount>1</threadcount>
+		<authsessions initialCapacity="10000" loadFactor="80" concurrencyLevel="128"/>
+		<appsessions initialCapacity="10000" loadFactor="80" concurrencyLevel="128"/>
+		<lockouttime>1</lockouttime>
+		<loginattemptsallowed>5</loginattemptsallowed>
+		<showtimetounlockuser>true</showtimetounlockuser>
+		<checkpasswordhashonly>false</checkpasswordhashonly>
+	</common>
+
+	<xmlfile>
+		<id>file</id>
+		<logging>true</logging>
+		<url>/opt/mellophone/users.xml</url>
+	</xmlfile>
+
+</config>
