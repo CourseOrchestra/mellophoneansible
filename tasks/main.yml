@@ -21,6 +21,12 @@
     owner: tomcat
   notify: restart tomcat
 
+- name: mkdir
+  file:
+    dest: /opt/tomcat/conf/Catalina/localhost
+    state: directory
+    owner: tomcat
+
 - name: copy mellophone tomcat config file
   copy:
     src: files/mellophone.xml
