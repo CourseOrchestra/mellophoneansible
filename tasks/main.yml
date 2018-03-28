@@ -8,7 +8,7 @@
 
 - name: download mellophone war
   get_url:
-    url: "{{ mellophone_url }}"
+    url: "{{ mellophone_download_url }}"
     dest: /opt/mellophone-{{ mellophone_version }}.war
     mode: "0644"
     owner: tomcat

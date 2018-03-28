@@ -1,5 +1,5 @@
 ---
 mellophone_build: 85
 
-mellophone_url: https://artifactory.corchestra.ru/artifactory/corchestra-dev/{{ mellophone_build }}/mellophone-6.1-SNAPSHOT.war
+mellophone_download_url: https://artifactory.corchestra.ru/artifactory/corchestra-dev/{{ mellophone_build }}/mellophone-6.1-SNAPSHOT.war
 mellophone_version: 6.1b{{ mellophone_build }}
