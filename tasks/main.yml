@@ -3,7 +3,7 @@
   file:
     dest: /opt/mellophone
     state: directory
-    mode: "0644"
+    mode: "0755"
     owner: tomcat
 
 - name: download mellophone war
