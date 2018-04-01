@@ -2,8 +2,9 @@ Mellophone
 =========
 
 [![Build Status](https://ci.corchestra.ru/buildStatus/icon?job=mellophoneansible/master)](https://ci.corchestra.ru/job/mellophoneansible/job/master/)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-CourseOrchestra.mellophone-blue.svg)](https://galaxy.ansible.com/CourseOrchestra/mellophone/)
 
-Installation of [Mellophone](https://corchestra.ru/wiki/index.php?title=Mellophone) platform in Tomcat. This role should be run after [CourseOrchestra.tomcat](https://galaxy.ansible.com/CourseOrchestra/tomcat/).
+Installation of [Mellophone](https://github.com/CourseOrchestra/mellophone) (wiki: https://corchestra.ru/wiki/index.php?title=Mellophone) authentication service in Tomcat. This role should be run after [CourseOrchestra.tomcat](https://galaxy.ansible.com/CourseOrchestra/tomcat/).
 
 Requirements
 ------------
