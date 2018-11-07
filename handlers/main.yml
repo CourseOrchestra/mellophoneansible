@@ -4,3 +4,4 @@
     state: restarted
     enabled: yes
     name: tomcat
+  when: ansible_connection != 'docker'
